@@ -1,3 +1,3 @@
-##PORTFOLIO
-### M. Sai Praveen Varma
+PORTFOLIO
+M. Sai Praveen Varma
 
