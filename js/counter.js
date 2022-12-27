@@ -6,7 +6,13 @@ function updateCounter() {
      * if count is null then set count to 1
     * else increment the count by 1 (Note: count is a string so convert it to number using parseInt)
     */
-    localStorage.setItem('visiterCount', count);
+   if(count == null){
+        count = 1;
+   }
+   else{
+        count += 1;
+   } 
+   localStorage.setItem('visiterCount', count);
     counter.innerHTML = `Vistor Count: ${localStorage.getItem('visiterCount')}`;
 }
 updateCounter();
