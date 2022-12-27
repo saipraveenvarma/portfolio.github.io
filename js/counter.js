@@ -4,7 +4,7 @@ function updateCounter() {
   let count = localStorage.getItem("visiterCount");
   if (count == String(null)) {
     count = 1;
-  } else count = paraseInt(count) + 1;
+  } else {count = parseInt(count) + 1}
   /**
    * if count is null then set count to 1
    * else increment the count by 1 (Note: count is a string so convert it to number using parseInt)
